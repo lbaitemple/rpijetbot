@@ -5,7 +5,24 @@ sudo apt update && sudo apt upgrade -y
 sudo apt-get install -y i2c-tools git
 sudo raspi-config
 ```
+Pytorch Install
+```
+sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools -y
+mkdir pytorch_install && cd pytorch_install
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+pip3 install typing_extensions
 
+export NO_CUDA=1
+export NO_DISTRIBUTED=1
+export NO_MKLDNN=1 
+export NO_NNPACK=1
+export NO_QNNPACK=1
+
+python3 setup.py build
+python3 setup.py sdist bdist_wheel
+sudo -E python3 setup.py install
+```
 setup I2C
 
 ```
