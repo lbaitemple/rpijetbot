@@ -11,13 +11,26 @@ sudo apt-get install python3-pip -y
 sudo pip3 install -U pip testresources setuptools==49.6.0 
 sudo pip3 install -U numpy==1.19.4 future==0.18.2 mock==3.0.5 h5py==2.10.0 keras_preprocessing==1.1.1 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11
 sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v45 tensorflow
+# install torch
 
-# iisntall torch
-wget https://nvidia.box.com/shared/static/cs3xn3td6sfgtene6jdvsxlr366m2dhq.whl -O torch-1.7.0-cp36-cp36m-linux_aarch64.whl
-sudo apt-get install python3-pip libopenblas-base libopenmpi-dev -y
-pip3 install Cython
-pip3 install numpy torch-1.7.0-cp36-cp36m-linux_aarch64.whl
+sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools -y
+mkdir pytorch_install && cd pytorch_install
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+pip3 install typing_extensions
 
+export NO_CUDA=1
+export NO_DISTRIBUTED=1
+export NO_MKLDNN=1 
+export NO_NNPACK=1
+export NO_QNNPACK=1
+
+python3 setup.py build
+python3 setup.py sdist bdist_wheel
+sudo -E python3 setup.py install
+
+
+#install torchvision
 sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev -y
 git clone https://github.com/pytorch/vision torchvision   # see below for version of torchvision to download
 cd torchvision
