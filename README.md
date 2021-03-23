@@ -28,5 +28,7 @@ chmod +x install_cv.sh
 
 Pytorch
 ```
+sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools python3-wheel python3-pillow python3-numpy -y
+
 wget https://raw.githubusercontent.com/nmilosev/pytorch-arm-builds/master/pytorch-arm64.sh
 ```
