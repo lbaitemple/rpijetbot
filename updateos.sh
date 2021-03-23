@@ -12,9 +12,9 @@ sudo pip uninstall tensorflow
 sudo pip3 uninstall tensorflow
 # install the dependencies (if not already onboard)
 sudo apt-get install gfortran
-sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev
-sudo apt-get install libatlas-base-dev libopenblas-dev libblas-dev
-sudo apt-get install liblapack-dev
+sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev -y
+sudo apt-get install libatlas-base-dev libopenblas-dev libblas-dev -y
+sudo apt-get install liblapack-dev -y
 sudo -H pip3 install pybind11
 sudo -H pip3 install Cython==0.29.21
 # install h5py with Cython version 0.29.21 (± 6 min @1950 MHz)
