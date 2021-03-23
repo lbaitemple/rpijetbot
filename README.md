@@ -25,3 +25,8 @@ https://gist.githubusercontent.com/sickate/062c7b236fc35915249b55bceb51e3a7/raw/
 chmod +x install_cv.sh
 ./install_cv.sh
 ```
+
+Pytorch
+```
+wget https://raw.githubusercontent.com/nmilosev/pytorch-arm-builds/master/pytorch-arm64.sh
+```
