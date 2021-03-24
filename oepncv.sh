@@ -45,3 +45,5 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D BUILD_opencv_python3=TRUE \
         -D OPENCV_GENERATE_PKGCONFIG=ON \
         -D BUILD_EXAMPLES=OFF ..
+make 
+sudo make install
