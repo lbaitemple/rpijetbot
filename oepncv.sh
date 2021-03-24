@@ -1,18 +1,18 @@
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 # dependencies
-sudo apt-get install build-essential cmake git unzip pkg-config
-sudo apt-get install libjpeg-dev libpng-dev
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev
-sudo apt-get install libgtk2.0-dev libcanberra-gtk* libgtk-3-dev
-sudo apt-get install libxvidcore-dev libx264-dev
-sudo apt-get install python3-dev python3-numpy python3-pip
-sudo apt-get install libtbb2 libtbb-dev libdc1394-22-dev
-sudo apt-get install libv4l-dev v4l-utils
-sudo apt-get install libopenblas-dev libatlas-base-dev libblas-dev
-sudo apt-get install liblapack-dev gfortran libhdf5-dev
-sudo apt-get install libprotobuf-dev libgoogle-glog-dev libgflags-dev
-sudo apt-get install protobuf-compiler
+sudo apt-get install build-essential cmake git unzip pkg-config -y
+sudo apt-get install libjpeg-dev libpng-dev -y
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev -y
+sudo apt-get install libgtk2.0-dev libcanberra-gtk* libgtk-3-dev -y
+sudo apt-get install libxvidcore-dev libx264-dev -y
+sudo apt-get install python3-dev python3-numpy python3-pip -y
+sudo apt-get install libtbb2 libtbb-dev libdc1394-22-dev -y
+sudo apt-get install libv4l-dev v4l-utils -y
+sudo apt-get install libopenblas-dev libatlas-base-dev libblas-dev -y
+sudo apt-get install liblapack-dev gfortran libhdf5-dev -y
+sudo apt-get install libprotobuf-dev libgoogle-glog-dev libgflags-dev -y
+sudo apt-get install protobuf-compiler -y
 cd ~
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.3.0.zip
 wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.3.0.zip
