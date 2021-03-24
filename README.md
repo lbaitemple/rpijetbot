@@ -54,3 +54,5 @@ ref
 https://eide.ai/rpi4/pytorch/2020/06/30/pytorch-raspberry.html
 
 https://qengineering.eu/install-tensorflow-2.2.0-on-raspberry-64-os.html
+
+https://qengineering.eu/install-opencv-4.3-on-raspberry-64-os.html
