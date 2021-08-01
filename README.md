@@ -1,4 +1,5 @@
 # rpijetbot
+Jetbot https://developer.nvidia.com/embedded/jetpack
 
 Image download at 
 
