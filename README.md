@@ -1,5 +1,9 @@
 # rpijetbot
 
+Image download at 
+
+http://jetbot.org/v0.4.3/software_setup/sd_card.html
+
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt-get install -y i2c-tools git
