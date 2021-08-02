@@ -1,6 +1,11 @@
 # rpijetbot
 Jetbot https://developer.nvidia.com/embedded/jetpack
 
+```
+git clone https://github.com/lbaitemple/rpijetbot/
+cd ~/rpijetbot
+```
+
 Image download at 
 
 http://jetbot.org/v0.4.3/software_setup/sd_card.html
