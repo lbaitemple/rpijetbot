@@ -73,9 +73,9 @@ node-red-pi --max-old-space-size=256
 ```
 
 ```
-
+sudo apt install libqtgui4   libilmbase-dev libopenexr-dev libgstreamer1.0-dev  -y
 sudo apt-get install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-good python3-gst-1.0 python3-gi gobject-introspection gir1.2-gtk-3.0 python3-numpy
- 
+sudo  pip3 install opencv-contrib-python==4.1.0.25
 ```
 ref
 
