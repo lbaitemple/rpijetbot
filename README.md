@@ -71,6 +71,12 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 node-red-pi --max-old-space-size=256
 
 ```
+
+```
+
+sudo apt-get install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-good python3-gst-1.0 python3-gi gobject-introspection gir1.2-gtk-3.0 python3-numpy
+ 
+```
 ref
 
 https://eide.ai/rpi4/pytorch/2020/06/30/pytorch-raspberry.html
