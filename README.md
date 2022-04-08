@@ -64,6 +64,13 @@ wget https://raw.githubusercontent.com/nmilosev/pytorch-arm-builds/master/pytorc
 ```
 pip3 install https://github.com/bitsy-ai/tensorflow-arm-bin/releases/download/v2.4.0/tensorflow-2.4.0-cp37-none-linux_armv7l.whl
 ```
+
+### Install node-red
+```
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+node-red-pi --max-old-space-size=256
+
+```
 ref
 
 https://eide.ai/rpi4/pytorch/2020/06/30/pytorch-raspberry.html
