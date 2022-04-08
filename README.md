@@ -59,6 +59,11 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
 
 wget https://raw.githubusercontent.com/nmilosev/pytorch-arm-builds/master/pytorch-arm64.sh
 ```
+
+#### tensorflow light
+```
+pip3 install https://github.com/bitsy-ai/tensorflow-arm-bin/releases/download/v2.4.0/tensorflow-2.4.0-cp37-none-linux_armv7l.whl
+```
 ref
 
 https://eide.ai/rpi4/pytorch/2020/06/30/pytorch-raspberry.html
