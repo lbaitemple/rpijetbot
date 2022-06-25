@@ -6,7 +6,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y  python3-pip nodejs libffi-dev 
 sudo pip3 install setuptools
 sudo apt install libffi-dev -y
-sudo pip3 install cffi
+sudo pip3 install cffi MarkupSafe==2.0.1
 
 sudo pip3 install jupyter jupyterlab
 sudo jupyter labextension install @jupyter-widgets/jupyterlab-manager
